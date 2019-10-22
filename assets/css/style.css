@@ -1,3 +1,5 @@
+/* Universal Styles */
+
 * {
     box-sizing: border-box;
 }
@@ -34,6 +36,8 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Main Section Styles */
+
 main {
     background-color: rgb(255, 255, 255);
     height: 60%;
@@ -46,4 +50,12 @@ section {
 .container {
     width: 60%;
     margin: 1rem auto;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+li:hover {
+    list-style: circle;
 }
