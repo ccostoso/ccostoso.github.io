@@ -2,9 +2,17 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: rgb(255, 244, 219);
     font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -28,6 +36,7 @@ p {
 
 main {
     background-color: rgb(255, 255, 255);
+    height: 60%;
 }
 
 section {
