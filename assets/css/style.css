@@ -27,7 +27,10 @@ p {
 
 main {
     background-color: rgb(255, 255, 255);
-    padding: 0;
+}
+
+section {
+    padding: 1rem 0;
 }
 
 .container {
