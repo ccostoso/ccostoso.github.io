@@ -25,6 +25,21 @@
   z-index: 50;
 }
 
+#vert-nav ul {
+  text-align: center;
+}
+
+#vert-nav ul li {
+  padding: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 0px;
+}
+
+#vert-nav ul li a:hover {
+  text-decoration: none;
+}
+
 .bar {
   height: .25rem;
   width: 2rem;
@@ -35,5 +50,9 @@
 
 #main-container {
   margin-top: 5rem;
+}
+
+#main-container .card {
+  border-radius: 0px;
 }
 /*# sourceMappingURL=style.css.map */

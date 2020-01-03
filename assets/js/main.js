@@ -13,7 +13,7 @@ menuToggler.onclick = function() {
     }
 };
 
-// const mainContainer = document.querySelector('#main-container');
-// const headerBar = document.querySelector('#header-bar');
-// mainContainer.style["margin-top"] = `${parseInt((getComputedStyle(headerBar).height).slice(0, (getComputedStyle(headerBar).height).length - 2)) * 1.25}px`;
-// console.log(mainContainer.style["margin-top"]);
+const yearDisplay = document.getElementById('year-display');
+const date = new Date();
+yearDisplay.innerText = JSON.stringify(date.getFullYear());
+console.log(currentYear);

@@ -23,6 +23,19 @@
     z-index: 50;
 }
 
+#vert-nav ul {
+    text-align: center;
+    li {
+        padding: 2rem 0;
+        background-color: rgba(255, 255, 255, .5);
+        border: none;
+        border-radius: 0px;
+        a:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 .bar {
     height: .25rem;
     width: 2rem;
@@ -33,4 +46,7 @@
 
 #main-container {
     margin-top: 5rem;
+    .card {
+        border-radius: 0px;
+    }
 }
