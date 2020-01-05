@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+a {
+    &:hover {
+        color: rgba(0, 0, 0, 0.7);
+    }
+    color: black;
+}
+
 #header-bar {
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
 }
@@ -48,5 +55,41 @@
     margin-top: 5rem;
     .card {
         border-radius: 0px;
+    }
+}
+
+// Portfolio
+
+figure.card {
+    border: none;
+}
+
+figure {
+    border-radius: 0px;
+    height: 12rem;
+    width: auto;
+    border: none;
+    h3 {
+        background-color: rgba(255,255,255,.75)
+    }
+    .card-img-overlay {
+        border: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    #menu-label::after {
+        content: "Menu";
+    }
+
+    #vert-nav {
+        width: 66%;
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    #vert-nav {
+        width: 100%;
     }
 }
