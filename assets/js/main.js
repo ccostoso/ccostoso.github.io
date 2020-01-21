@@ -1,3 +1,5 @@
+// This file is deprecated and no longer utilized. It is for reference purposes only.
+
 const menuToggler = document.querySelector('#menu-toggler');
 const vertNav = document.querySelector('#vert-nav');
 

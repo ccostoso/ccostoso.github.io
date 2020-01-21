@@ -13,13 +13,17 @@ html, body {
 body {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777;
-  /* background-image: url("../images/dot-grid.png"); */
+}
+
+.d-hidden {
+  visibility: hidden;
 }
 
 /* Header Styles */
 header {
-  border-bottom: solid 2px #ccc;
   background-color: #cf0000;
+  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1#navbarlogo {
@@ -108,6 +112,7 @@ p {
 @-webkit-keyframes right-fade {
   from {
     opacity: 1;
+    display: relative;
   }
   to {
     -webkit-transform: translateX(5%);
@@ -119,6 +124,7 @@ p {
 @keyframes right-fade {
   from {
     opacity: 1;
+    display: relative;
   }
   to {
     -webkit-transform: translateX(5%);

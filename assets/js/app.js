@@ -12,19 +12,22 @@ function proceed(lastPage, currentPage) {
         direction = "left";
     }
 
-    console.log("lastPage", lastPage);
-    console.log("currentPage", currentPage);
+    if (lastPage !== currentPage) {
+        $(`#${lastPage}`).removeClass("in-fade");
+        $(`#${lastPage}`).addClass(`${direction}-fade`);
 
-    $(`#${lastPage}`).removeClass("in-fade");
-    $(`#${lastPage}`).toggleClass(`${direction}-fade`);
-
-    setTimeout(function() {
-        $(`#${lastPage}`).addClass("d-none");
-        $(`#${lastPage}`).toggleClass(`${direction}-fade`);
-
-        $(`#${currentPage}`).toggleClass("d-none in-fade");
-        $(`#${currentPage}`).removeClass(`${direction}-fade`);
-    }, 400);
+        setTimeout(function() {
+            $(`#${lastPage}`).addClass("d-hidden");
+        }, 350)
+    
+        setTimeout(function() {
+            $(`#${lastPage}`).toggleClass("d-hidden d-none");
+            $(`#${lastPage}`).removeClass(`${direction}-fade`);
+    
+            $(`#${currentPage}`).removeClass(`${direction}-fade d-none`);
+            $(`#${currentPage}`).addClass("in-fade");
+        }, 400);
+    }
 }
 
 $(".window-link").on("click", function() {
