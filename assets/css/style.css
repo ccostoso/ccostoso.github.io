@@ -181,14 +181,10 @@ figure {
 figure {
   width: 100%;
   height: 100%;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-  -webkit-transition: -webkit-box-shadow .2s;
-  transition: -webkit-box-shadow .2s;
-  transition: box-shadow .2s;
-  transition: box-shadow .2s, -webkit-box-shadow .2s;
+  -webkit-transition: -webkit-transform .2s, -webkit-box-shadow .2s;
+  transition: -webkit-transform .2s, -webkit-box-shadow .2s;
+  transition: transform .2s, box-shadow .2s;
+  transition: transform .2s, box-shadow .2s, -webkit-transform .2s, -webkit-box-shadow .2s;
 }
 
 figure:hover {
