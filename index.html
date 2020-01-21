@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>My Portfolio - Bootstrap</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container">
+                <h1 id="navbarlogo" class="navbar-brand">Carlos Costoso</h1>
+                <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto ml-1">
+                        <li class="nav-item">
+                            <a class="nav-link window-link" data-name="about" href="">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link barccc">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link window-link" data-name="portfolio" href="">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link barccc">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link window-link" data-name="contact" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="about" class="card container my-3 px-1">
+        <section class="card-body">
+            <h2 class="card-title pt-3 pb-0">About Me</h2>
+            <hr>
+            <article class="card-text">
+                <img class="card-image float-left mr-3" id="bio-image" src="assets/images/photo.jpg" alt="Photo of Carlos" id="bio-image">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus beatae tenetur neque, repellendus consectetur assumenda hic minus quis earum quisquam cupiditate soluta, placeat tempore cumque accusamus! Voluptates voluptate illum voluptas.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus beatae tenetur neque, repellendus consectetur assumenda hic minus quis earum quisquam cupiditate soluta, placeat tempore cumque accusamus! Voluptates voluptate illum voluptas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quibusdam earum magnam aliquam consectetur voluptatem quod, perspiciatis, reprehenderit est architecto corporis quasi? Molestiae blanditiis mollitia voluptatibus perspiciatis numquam quis a.</p>
+            </article>
+
+        </section>
+    </main>
+
+    <main id="portfolio" class="card container my-3 px-1 d-none">
+        <section class="card-body">
+            <h2 class="card-title pt-3 pb-0">Portfolio</h2>
+            <hr>
+            <div class="row ml-0">
+                
+                <!-- Hangman Card -->
+                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
+                    <a href="#" alt="Hangman">
+                        <img src="assets/images/hangman.jpg" alt="Hangman">
+                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
+                            <h3 class="p-2 mb-4 mt-auto text-center">Hangman</h3>
+                        </div>
+                    </a>
+                </figure>
+                
+            
+                <!-- RPG Game Card -->
+                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
+                    <a href="#" alt="RPG Game">
+                        <img src="assets/images/rpg.jpg" alt="RPG Game">
+                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
+                            <h3 class="p-2 mb-4 mt-auto text-center">RPG Game</h3>
+                        </div>
+                    </a>
+                </figure>
+                
+
+                <!-- Trivia Game Card -->
+                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
+                    <a href="#" alt="Trivia Game">
+                        <img src="assets/images/trivia.jpg" alt="Trivia Game">
+                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
+                            <h3 class="p-2 mb-4 mt-auto text-center">Trivia Game</h3>
+                        </div>
+                    </a>
+                </figure>
+                
+            
+                <!-- Rutgers Info Widget Card -->
+                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
+                    <a href="#" alt="Rutgers Info Widget">
+                        <img src="assets/images/rutgers.jpg" alt="Rutgers Info Widget">
+                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
+                            <h3 class="p-2 mb-4 mt-auto text-center">Rutgers Info Widget</h3>
+                        </div>
+                    </a>
+                </figure>
+            
+            
+                <!-- Rock Paper Scissors Card -->
+                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
+                    <a href="#" alt="Rock Paper Scissors">
+                        <img src="assets/images/rps.jpg" alt="Rock Paper Scissors">
+                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
+                            <h3 class="p-2 mb-4 mt-auto text-center">Rock Paper Scissors</h3>
+                        </div>
+                    </a>
+                </figure>
+                
+            </div>
+        </section>
+    </main>
+
+    <main id="contact" class="card container my-3 px-1 d-none">
+        <section class="card-body">
+            <h2 class="card-title pt-3 pb-0">Contact</h2>
+            <hr>
+            <form class="form card-text">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <br />
+                    <input class="form-control" type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <br />
+                    <input class="form-control" type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <br />
+                    <textarea class="form-control" id="message"></textarea>
+                </div>
+                <button class="btn btn-outline-success" type="submit" name="Submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer mt-auto pt-3 pb-1 d-flex justify-content-center">
+        <span>Copyright &#xa9;</span>
+    </footer>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
