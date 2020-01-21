@@ -15,10 +15,6 @@ body {
   color: #777777;
 }
 
-.d-hidden {
-  visibility: hidden;
-}
-
 /* Header Styles */
 header {
   background-color: #cf0000;
@@ -34,7 +30,7 @@ h1#navbarlogo {
   font-size: 2rem;
   line-height: 1;
   font-weight: bold;
-  font-family: 'Georgia', Times, 'Times New Roman', serif;
+  font-family: Montserrat, sans-serif;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -43,6 +39,14 @@ h1#navbarlogo {
 
 .navbar-light .navbar-nav .nav-link.barccc {
   color: #ccc;
+}
+
+.nav-link {
+  font-family: Montserrat, sans-serif;
+}
+
+.nav-link:focus, .nav-link:active {
+  border: none;
 }
 
 /* Main Section Styles */
