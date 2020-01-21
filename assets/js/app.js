@@ -3,7 +3,6 @@ let currentPage = pageArr[0];
 let lastPage;
 
 function proceed(lastPage, currentPage) {
-    // debugger;
     let direction;
     console.log(pageArr.indexOf(currentPage));
 
@@ -18,22 +17,13 @@ function proceed(lastPage, currentPage) {
 
     $(`#${lastPage}`).removeClass("in-fade");
     $(`#${lastPage}`).toggleClass(`${direction}-fade`);
-    // $(`#${lastPage}`).toggleClass("d-none");
 
     setTimeout(function() {
-        $(`#${lastPage}`).toggleClass("d-none");
+        $(`#${lastPage}`).addClass("d-none");
         $(`#${lastPage}`).toggleClass(`${direction}-fade`);
 
-
-        if (direction === "right") {
-                // windowNum++;
-                $(`#${currentPage}`).toggleClass("d-none in-fade");
-        } else {
-                // windowNum--;
-                // $(".num-input").text(windowNum)
-                $(`#${currentPage}`).toggleClass("d-none in-fade");
-                $(`#${currentPage}`).removeClass(`${direction}-fade`);
-        }
+        $(`#${currentPage}`).toggleClass("d-none in-fade");
+        $(`#${currentPage}`).removeClass(`${direction}-fade`);
     }, 400);
 }
 
@@ -44,32 +34,3 @@ $(".window-link").on("click", function() {
     console.log(pageArr.indexOf(currentPage) > pageArr.indexOf(lastPage));
     proceed(lastPage, currentPage);
 });
-
-// function proceed(action) {
-//     var direction;
-//     if (!action) {
-//         direction = "left";
-//     } else {
-//         direction = "right";
-//     }
-
-//     $(`[data-qnum="${windowNum}"]`).removeClass("in-fade");
-//     $(`[data-qnum="${windowNum}"]`).toggleClass(`${direction}-fade`);
-
-//     setTimeout(function() {
-//         $(`[data-qnum="${windowNum}"]`).toggleClass("d-none");
-//         $(`[data-qnum="${windowNum}"]`).toggleClass(`${direction}-fade`);
-
-
-//         if (!action) {
-//                 windowNum++;
-//                 $(".num-input").text(windowNum)
-//                 $(`[data-qnum="${windowNum}"]`).toggleClass("d-none in-fade");
-//         } else {
-//                 windowNum--;
-//                 $(".num-input").text(windowNum)
-//                 $(`[data-qnum="${windowNum}"]`).toggleClass("d-none in-fade");
-//                 $(`[data-qnum="${windowNum}"]`).removeClass(`${direction}-fade`);
-//         }
-//     }, 400);
-// }

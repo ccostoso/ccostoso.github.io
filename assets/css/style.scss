@@ -32,11 +32,10 @@ body {
 
 header {
     border-bottom: solid 2px #ccc;
-    background-color: #ffffff;
+    background-color: #cf0000;
 }
 
 h1#navbarlogo {
-    background-color: #4aaaa4;
     color: #ffffff;
     display: inline-block;
     margin: 0;
@@ -60,7 +59,7 @@ h1#navbarlogo {
 h2 {
     margin: 0;
     padding: 1rem 0;
-    color: #4aaaa4;
+    color: #ff4747;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -72,10 +71,6 @@ p {
 
 #bio-image {
     max-width: 150px;
-}
-
-.card {
-    border-radius: 0px;
 }
 
 // Animation Syles
@@ -137,7 +132,7 @@ footer {
 }
 
 .card h3 {
-    background-color: #4aaaa4;
+    background-color: #ff4747;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #ffffff;
     font-weight: normal;
@@ -178,18 +173,18 @@ button.btn {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 1rem;
     line-height: 1;
-    color: #4aaaa4;
+    color: #ff4747;
 }
 
 .btn-outline-success {
-    color: #4aaaa4;
-    border-color: #4aaaa4;
+    color: #ff4747;
+    border-color: #ff4747;
   }
   
   .btn-outline-success:hover {
     color: #fff;
-    background-color: #4aaaa4;
-    border-color: #4aaaa4;
+    background-color: #ff4747;
+    border-color: #ff4747;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
   }
   
@@ -198,15 +193,15 @@ button.btn {
   }
   
   .btn-outline-success.disabled, .btn-outline-success:disabled {
-    color: #4aaaa4;
+    color: #ff4747;
     background-color: transparent;
   }
   
   .btn-outline-success:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active,
   .show > .btn-outline-success.dropdown-toggle {
     color: #fff;
-    background-color: #4aaaa4;
-    border-color: #4aaaa4;
+    background-color: #ff4747;
+    border-color: #ff4747;
   }
   
   .btn-outline-success:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus,
