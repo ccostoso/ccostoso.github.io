@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300i&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>My Portfolio - Bootstrap</title>
+    <title>Carlos Costoso - My Portfolio</title>
 </head>
 <body class="d-flex flex-column h-100">
-    <header>
+    <header class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light p-0">
             <h1 id="navbar-logo" class="navbar-brand">CARLOS COSTOSO</h1>
             <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,13 @@
         </nav>
     </header>
 
-    <main id="about" class="card container my-3 px-1 in-fade">
+    <div class="header">
+        <div class="navbar">
+            <h1 class="navbar-logo">&nbsp;</h1>
+        </div>
+    </div>
+
+    <main id="about" class="card container mb-3 px-1 in-fade">
         <section class="card-body">
             <h2 class="card-title pt-3 pb-0">About Me</h2>
             <hr>
@@ -54,71 +60,20 @@
         </section>
     </main>
 
-    <main id="portfolio" class="card container my-3 px-1 d-none">
+    <main id="portfolio" class="card container mb-3 px-1 d-none">
         <section class="card-body">
             <h2 class="card-title pt-3 pb-0">Portfolio</h2>
             <hr>
             <div id="project-figs" class="row ml-0">
                 
-                <!-- Hangman Card
-                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
-                    <a href="#" alt="Hangman">
-                        <img src="assets/images/hangman.jpg" alt="Hangman">
-                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
-                            <h3 class="p-2 mb-4 mt-auto text-center">Hangman</h3>
-                        </div>
-                    </a>
-                </figure>
-                
-            
-                RPG Game Card
-                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
-                    <a href="#" alt="RPG Game">
-                        <img src="assets/images/rpg.jpg" alt="RPG Game">
-                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
-                            <h3 class="p-2 mb-4 mt-auto text-center">RPG Game</h3>
-                        </div>
-                    </a>
-                </figure>
-                
-
-                Trivia Game Card
-                <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
-                    <a href="#" alt="Trivia Game">
-                        <img src="assets/images/trivia.jpg" alt="Trivia Game">
-                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
-                            <h3 class="p-2 mb-4 mt-auto text-center">Trivia Game</h3>
-                        </div>
-                    </a>
-                </figure>
-                
-            
-                Rutgers Info Widget Card -->
-                <!-- <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
-                    <a href="#" alt="Rutgers Info Widget">
-                        <img src="assets/images/rutgers.jpg" alt="Rutgers Info Widget">
-                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
-                            <h3 class="p-2 mb-4 mt-auto text-center">Rutgers Info Widget</h3>
-                        </div>
-                    </a>
-                </figure> -->
-            
-            
-                <!-- Rock Paper Scissors Card -->
-                <!-- <figure class="card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden">
-                    <a href="#" alt="Rock Paper Scissors">
-                        <img src="assets/images/rps.jpg" alt="Rock Paper Scissors">
-                        <div class="card-img-overlay p-0 d-flex flex-column-reverse">
-                            <h3 class="p-2 mb-4 mt-auto text-center">Rock Paper Scissors</h3>
-                        </div>
-                    </a>
-                </figure> -->
+                <!-- To be populated with jQuery. -->
                 
             </div>
+            <h5 class="card-text">Let's connect on <a href="https://www.linkedin.com/in/carlos-costoso-b56018190/" alt="My LinkedIn">LinkedIn</a>.</h5>
         </section>
     </main>
 
-    <main id="contact" class="card container my-3 px-1 d-none">
+    <main id="contact" class="card container mb-3 px-1 d-none">
         <section class="card-body">
             <h2 class="card-title pt-3 pb-0">Contact</h2>
             <hr>
@@ -149,6 +104,6 @@
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 </body>
 </html>
