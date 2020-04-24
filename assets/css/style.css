@@ -177,8 +177,8 @@ footer {
 }
 
 figure {
-  max-width: 300px;
-  max-height: 200px;
+  width: 15rem;
+  height: 15rem;
   overflow: auto;
 }
 
@@ -196,6 +196,10 @@ figure:hover {
           transform: scale(1.05);
   -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+.demo-img {
+  max-width: 100%;
 }
 
 /* Contact Styles */

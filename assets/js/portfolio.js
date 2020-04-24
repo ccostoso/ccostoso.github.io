@@ -1,38 +1,31 @@
 export function projectPage() {
     const projectArr = [
         {
-            name: "hangman",
-            formattedName: "Hangman",
-            number: 3,
-            description: "I worked on a hangman game utilizing jQuery, vanilla JavaScript and Bootstrap.",
-            active: true
-        },
-        {
             name: "rpg",
             formattedName: "RPG",
-            number: 4,
+            github: "Homework4",
             description: "This Dragon Quest themed arena fighter uses monsters and sprites from 2001's Dragon Warrior VII.",
             active: true
         },
         {
             name: "trivia",
             formattedName: "Trivia",
-            number: 5,
+            github: "Homework5",
             description: "This basic quiz game employs timeouts, counters and GIFs.",
             active: true
         },
         {
-            name: "rutgers",
-            formattedName: "Rutgers",
-            number: null,
-            description: null,
+            name: "nyt",
+            formattedName: "NYT Scraper",
+            github: "NYT-Scraper",
+            description: "This app uses a MongoDB database to store article headlines scraped with the cheerio Node package module from the New York Times front page.",
             active: false
         }, 
         {
-            name: "rps",
-            formattedName: "Rock Paper Scissors",
-            number: null,
-            description: null,
+            name: "mutuaid",
+            formattedName: "MutuAid",
+            github: "Covid-19-Mutual-Aid",
+            description: "I led a team to develop a Reddit-like application to connect people trying to build local mutual aid networks.",
             active: false
         }
     ];
@@ -44,7 +37,7 @@ export function projectPage() {
         let projectAnchor;
         if (ele.active) {
             projectAnchor = $("<a>").attr({
-                href: `https://ccostoso.github.io/Homework${ele.number}`,
+                href: `https://github.com/ccostoso/${ele.github}`,
                 alt: ele.formattedName
             });
         } else {
@@ -53,13 +46,14 @@ export function projectPage() {
             });
         }
         let projectImg = $("<img>").attr({
-            src: `assets/images/${ele.name}.jpg`,
-            alt: ele.formattedName
+            src: `assets/images/${ele.name}.gif`,
+            alt: ele.formattedName,
+            class: "demo-img"
         });
         let projectCardOverlay = $("<div>").addClass("card-img-overlay p-0 d-flex flex-column-reverse").append($("<h3>").addClass("p-2 mb-4 mt-auto text-center").text(ele.formattedName));
         projectAnchor.append(projectImg);
         projectAnchor.append(projectCardOverlay);
-        projectFig.append(projectAnchor)
+        projectFig.append(projectAnchor);
     
         $("#project-figs").append(projectFig);
     });
