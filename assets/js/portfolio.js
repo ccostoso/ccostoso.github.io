@@ -4,14 +4,14 @@ export function projectPage() {
             name: "rpg",
             formattedName: "RPG",
             github: "Homework4",
-            description: "This Dragon Quest themed arena fighter uses monsters and sprites from 2001's Dragon Warrior VII.",
+            description: "This Dragon Quest themed arena fighter uses monsters and sprites from 2001's Dragon Warrior VII. Technologies used include Bootstrap and jQuery.",
             active: true
         },
         {
             name: "trivia",
             formattedName: "Trivia",
             github: "Homework5",
-            description: "This basic quiz game employs timeouts, counters and GIFs.",
+            description: "This basic quiz game employs timeouts, counters and GIFs. Technologies used include Bootstrap and jQuery.",
             active: true
         },
         {
@@ -25,7 +25,7 @@ export function projectPage() {
             name: "mutuaid",
             formattedName: "MutuAid",
             github: "Covid-19-Mutual-Aid",
-            description: "I led a team to develop a Reddit-like application to connect people trying to build local mutual aid networks.",
+            description: "I led a team to develop a Reddit-like application to connect people trying to build local mutual aid networks. Technologies used include MongoDB/Mongoose, Express, React, Node, Passport and react-intl.",
             active: false
         }
     ];
