@@ -33,6 +33,9 @@ export function projectPage() {
     $.each(projectArr, (i, ele) => {
         console.log(ele);
         let projectFig = $("<figure>");
+        projectFig.mouseover(function() {
+            $("#project-desc").text(ele.description);
+        })
         projectFig.addClass("card col-xs col-md-4 p-0 mr-4 mb-4 overflow-hidden");
         let projectAnchor;
         if (ele.active) {
